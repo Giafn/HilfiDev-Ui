@@ -1,6 +1,24 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
+.red{
+    color: #d70037;
+}
+.abu{
+    color: #f1f1f1;
+}
+.bg-dark{
+    background-color: #004754 !important;
+    color: white;
+}
+.bg-dark:hover{
+    background-color: #d70037 !important;
+    color: white;
+}
+.bg-abu, .bg-abu:hover{
+    background-color: #f1f1f1 !important;
+    color: #004754;
+}
 .nav-item{
     position: relative;
 }
@@ -35,4 +53,8 @@
     width: 50%;
     left: 0;
     bottom: 1px;
+}
+.btn-big {
+    padding: 1rem 1.3rem;
+    border-radius: 1.3rem;
 }
