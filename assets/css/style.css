@@ -1,0 +1,38 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.nav-item{
+    position: relative;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: #d70037;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: 1px;
+    transition: 0.3s;
+}
+.nav-link:hover {
+    color: #d70037;
+}
+.nav-link:hover::after {
+    width: 50%;
+}
+.nav-item > .active{
+    color: #d70037 !important;
+}
+.nav-item > .active::after{
+    content: '';
+    position: absolute;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: #d70037;
+    height: 2px;
+    width: 50%;
+    left: 0;
+    bottom: 1px;
+}
