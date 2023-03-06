@@ -1,5 +1,12 @@
+/* :root{
+    --abu
+} */
+
 *{
     font-family: 'Poppins', sans-serif;
+}
+h2, h5{
+    font-weight: bold;
 }
 .red{
     color: #d70037;
@@ -7,20 +14,25 @@
 .abu{
     color: #f1f1f1;
 }
-.bg-dark{
-    background-color: #004754 !important;
-    color: white;
+.dark{
+    color: #004754;
 }
-.bg-dark:hover{
+.btn-dark, .bg-dark{
+    background-color: #004754 !important;
+    color: white !important;
+}
+.btn-dark:hover{
     background-color: #d70037 !important;
     color: white;
+    border-color: #d70037;
 }
-.bg-abu, .bg-abu:hover{
+.btn-abu, .bg-abu:hover{
     background-color: #f1f1f1 !important;
     color: #004754;
 }
 .nav-item{
     position: relative;
+    text-align: center;
 }
 .nav-link::after {
     content: '';
@@ -57,4 +69,14 @@
 .btn-big {
     padding: 1rem 1.3rem;
     border-radius: 1.3rem;
+    display: inline-block;
+}
+#services{
+    background-color: #f7f8fc;
+}
+.card{
+    border: none;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 2rem;
 }
