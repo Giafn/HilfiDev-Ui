@@ -80,3 +80,13 @@ h2, h5{
     padding-bottom: 2rem;
     border-radius: 2rem;
 }
+.card-body
+{
+    padding: 0;
+}
+.carousel-indicators  .active{
+    background-color: brown !important;
+}
+.carousel-indicators button{
+    border-radius: 50%;
+}
