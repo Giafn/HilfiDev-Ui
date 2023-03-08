@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-white fixed-top shadow-sm">
+    <nav id="navbar" class="navbar navbar-expand-lg bg-white fixed-top shadow-sm">
         <div class="container my-2">
           <a class="navbar-brand fw-bold fs-4" href="#">
             <img src="assets/img/hilfi.png" alt="Logo" height="30" class="d-inline-block align-text-top mx-4">
@@ -25,10 +25,10 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item mx-2">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" href="#hero">Home</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#hero">About</a>
+                <a class="nav-link" href="#">About</a>
               </li>
               <li class="nav-item mx-2">
                 <a class="nav-link" href="#services">Services</a>
@@ -37,319 +37,330 @@
                 <a class="nav-link" href="#advantages">Advantages</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#">Portofolio</a>
+                <a class="nav-link" href="#portofolio">Portofolio</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#">Client</a>
+                <a class="nav-link" href="#testimonial">Client</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact-us">Contact</a>
               </li>
             </ul>
           </div>
         </div>
     </nav>
 
-    <section id="Hero">
-        <div class="container-fluid mt-5">
-          <div class="row align-items-center justify-content-center pb-5 mt-2">
+    <main  data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true" tabindex="0">
+      <!-- sesi hero -->
+      <section id="hero">
+          <div class="container-fluid mt-5">
+            <div class="row align-items-center justify-content-center pb-5 mt-2">
+              <div class="col-md-5">
+                <img class="img-fluid hero-img" src="assets/img/hero.webp" alt="">
+              </div>
+              <div class="col-md-5 col-10 offset-md-1 ps-md-5 order-md-first">
+                <h1 class="fw-bold mb-4">Create <span class="red">The Best Website</span> With Us</h1>
+                <p class="text-secondary mb-4">- Create your webiste then you get ideas all over the world</p>
+                <a href="" class="btn btn-big btn-dark">Let's Talk <i class="bi bi-whatsapp ms-2"></i></a>
+                <a href="" class="btn">Portofolio <i class="bi bi-arrow-up-right-circle ms-2"></i></i></a>
+              </div>
+              <div class="col-1 d-md-block d-none">
+                <img class="img-fluid" style="max-height: 22rem;" src="assets/img/scroll.png" alt="" >
+              </div>
+            </div>
+            <div class="row pb-5">
+              <div class="col offset-md-1 ps-md-5 fw-bold text-center text-md-start">
+                <span class="me-md-3 me-2">Check out our</span>
+                <a href="" class="btn btn-big btn-abu mx-md-2"><i class="bi bi-facebook"></i></a>
+                <a href="" class="btn btn-big btn-abu mx-md-2"><i class="bi bi-instagram"></i></a>
+                <a href="" class="btn btn-big btn-abu mx-md-2"><i class="bi bi-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!-- tutup hero -->
+
+      <!-- sesi servis -->
+      <section id="services">
+        <div class="container py-3 px-lg-5">
+          <div class="row justify-content-center mt-4 py-5">
+            <div class="col-md-5 text-center">
+              <h5 class="red">What we do?</h5>
+              <h2>We Are Ready To Make Awesome Product</h2>
+            </div>
+          </div>
+          <div class="row gy-3 gx-xl-5 justify-content-center mb-5 mt-2">
+            <div class="col-lg-4 col-md-5 col-9">
+              <div class="card shadow">
+                <img src="assets/img/android.svg" alt="" class="img-fluid mx-auto mb-3" width="35%">
+                <div class="card-body text-center">
+                  <h5>Android Development</h5>
+                  <p>
+                    <small class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias officiis asperiores fugit beatae suscipit laboriosam eligendi cumque.</small>
+                  </p>
+                  <a href="" class="btn btn-big bg-white shadow">Book Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-5 col-9">
+              <div class="card shadow">
+                <img src="assets/img/android.svg" alt="" class="img-fluid mx-auto mb-3" width="35%">
+                <div class="card-body text-center">
+                  <h5>Android Development</h5>
+                  <p>
+                    <small class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias officiis asperiores fugit beatae suscipit laboriosam eligendi cumque.</small>
+                  </p>
+                  <a href="" class="btn btn-big bg-white shadow">Book Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-5 col-9">
+              <div class="card shadow">
+                <img src="assets/img/android.svg" alt="" class="img-fluid mx-auto mb-3" width="35%">
+                <div class="card-body text-center">
+                  <h5>Android Development</h5>
+                  <p>
+                    <small class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias officiis asperiores fugit beatae suscipit laboriosam eligendi cumque.</small>
+                  </p>
+                  <a href="" class="btn btn-big bg-white shadow">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- tutup servis -->
+
+      <!-- sesi advantages -->
+      <section id="advantages">
+        <div class="container py-5">
+          <div class="row mt-2 offset-1 mb-3">
             <div class="col-md-5">
-              <img class="img-fluid hero-img" src="assets/img/hero.webp" alt="">
-            </div>
-            <div class="col-md-5 col-10 offset-md-1 ps-md-5 order-md-first">
-              <h1 class="fw-bold mb-4">Create <span class="red">The Best Website</span> With Us</h1>
-              <p class="text-secondary mb-4">- Create your webiste then you get ideas all over the world</p>
-              <a href="" class="btn btn-big btn-dark">Let's Talk <i class="bi bi-whatsapp ms-2"></i></a>
-              <a href="" class="btn">Portofolio <i class="bi bi-arrow-up-right-circle ms-2"></i></i></a>
-            </div>
-            <div class="col-1 d-md-block d-none">
-              <img class="img-fluid" style="max-height: 22rem;" src="assets/img/scroll.png" alt="" >
+              <h5 class="fw-bold red">Our Advantages</h5>
+              <!-- <h2>Give The Best Service Is Our Responsibility</h2> -->
+              <h2>We Provide The Best Digital Services</h2>
             </div>
           </div>
-          <div class="row pb-5">
-            <div class="col offset-md-1 ps-md-5 fw-bold text-center text-md-start">
-              <span class="me-md-3 me-2">Check out our</span>
-              <a href="" class="btn btn-big btn-abu mx-md-2"><i class="bi bi-facebook"></i></a>
-              <a href="" class="btn btn-big btn-abu mx-md-2"><i class="bi bi-instagram"></i></a>
-              <a href="" class="btn btn-big btn-abu mx-md-2"><i class="bi bi-whatsapp"></i></a>
+          <div class="row justify-content-center">
+            <div class="col-10">
+              <div class="card bg-dark">
+                <div class="row mx-5">
+                  <div class="col-4 text-center my-4">
+                    <div class="btn-big bg-white dark mb-2">
+                      <i class="bi bi-house-gear-fill fs-4"></i>
+                    </div>
+                    <p>Lorem, ipsum dolor.</p>
+                  </div>
+                  <div class="col-4 text-center my-4">
+                    <div class="btn-big bg-white dark mb-2">
+                      <i class="bi bi-house-gear-fill fs-4"></i>
+                    </div>
+                    <p>Lorem, ipsum dolor.</p>
+                  </div>
+                  <div class="col-4 text-center my-4">
+                    <div class="btn-big bg-white dark mb-2">
+                      <i class="bi bi-house-gear-fill fs-4"></i>
+                    </div>
+                    <p>Lorem, ipsum dolor.</p>
+                  </div>
+                  <div class="col-4 text-center my-4">
+                    <div class="btn-big bg-white dark mb-2">
+                      <i class="bi bi-house-gear-fill fs-4"></i>
+                    </div>
+                    <p>Lorem, ipsum dolor.</p>
+                  </div>
+                  <div class="col-4 text-center my-4">
+                    <div class="btn-big bg-white dark mb-2">
+                      <i class="bi bi-house-gear-fill fs-4"></i>
+                    </div>
+                    <p>Lorem, ipsum dolor.</p>
+                  </div>
+                  <div class="col-4 text-center my-4">
+                    <div class="btn-big bg-white dark mb-2">
+                      <i class="bi bi-house-gear-fill fs-4"></i>
+                    </div>
+                    <p>Lorem, ipsum dolor.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-    </section>
+      </section>
+      <!-- tutup advantages -->
 
-    <section id="services">
-      <div class="container py-3 px-lg-5">
-        <div class="row justify-content-center mt-4 py-5">
-          <div class="col-md-5 text-center">
-            <h5 class="red">What we do?</h5>
-            <h2>We Are Ready To Make Awesome Product</h2>
-          </div>
-        </div>
-        <div class="row gy-3 gx-xl-5 justify-content-center mb-5 mt-2">
-          <div class="col-lg-4 col-md-5 col-9">
-            <div class="card shadow">
-              <img src="assets/img/android.svg" alt="" class="img-fluid mx-auto mb-3" width="35%">
-              <div class="card-body text-center">
-                <h5>Android Development</h5>
-                <p>
-                  <small class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias officiis asperiores fugit beatae suscipit laboriosam eligendi cumque.</small>
-                </p>
-                <a href="" class="btn btn-big bg-white shadow">Book Now</a>
-              </div>
+      <!-- sesi portofolio -->
+      <section id="portofolio">
+        <div class="container py-5">
+          <div class="row mt-2 offset-1 ">
+            <div class="col-md-5">
+              <h5 class="fw-bold red">Our Portofolio</h5>
+              <h2>Give The Best Service Is Our Responsibility</h2>
             </div>
           </div>
-          <div class="col-lg-4 col-md-5 col-9">
-            <div class="card shadow">
-              <img src="assets/img/android.svg" alt="" class="img-fluid mx-auto mb-3" width="35%">
-              <div class="card-body text-center">
-                <h5>Android Development</h5>
-                <p>
-                  <small class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias officiis asperiores fugit beatae suscipit laboriosam eligendi cumque.</small>
-                </p>
-                <a href="" class="btn btn-big bg-white shadow">Book Now</a>
+          <div class="col-10 offset-1">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="false" >
+              <div class="carousel-indicators">
+                <button style="width: 10px; height: 10px;"  type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button style="width: 10px; height: 10px;" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-5 col-9">
-            <div class="card shadow">
-              <img src="assets/img/android.svg" alt="" class="img-fluid mx-auto mb-3" width="35%">
-              <div class="card-body text-center">
-                <h5>Android Development</h5>
-                <p>
-                  <small class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias officiis asperiores fugit beatae suscipit laboriosam eligendi cumque.</small>
-                </p>
-                <a href="" class="btn btn-big bg-white shadow">Book Now</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="advantages">
-      <div class="container py-5">
-        <div class="row mt-2 offset-1 mb-3">
-          <div class="col-md-5">
-            <h5 class="fw-bold red">Our Advantages</h5>
-            <!-- <h2>Give The Best Service Is Our Responsibility</h2> -->
-            <h2>We Provide The Best Digital Services</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-10">
-            <div class="card bg-dark">
-              <div class="row mx-5">
-                <div class="col-4 text-center my-4">
-                  <div class="btn-big bg-white dark mb-2">
-                    <i class="bi bi-house-gear-fill fs-4"></i>
+              <div class="carousel-inner py-4">
+                <div class="carousel-item active" data-bs-interval="2000">
+                  <div class="row justify-content-center">
+                      <div class="col-4">
+                          <div class="card">
+                              <div class="card-body bg-dark rounded-5">
+                                  <img class="img-fluid rounded-5 " src="assets/img/portofolio/penerimaansiswa.png" alt="">
+                              </div>
+                              <div class="text text-center mt-3">
+                                  <small class="red">Scholl wesite</small>
+                                  <p>SMK Persis 02 Bandung</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-4">
+                          <div class="card">
+                              <div class="card-body bg-dark rounded-5">
+                                  <img class="img-fluid rounded-5 " src="assets/img/portofolio/tens holiday.png" alt="">
+                              </div>
+                              <div class="text text-center mt-3">
+                                  <small class="red">Scholl wesite</small>
+                                  <p>SMK Persis 02 Bandung</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-4">
+                          <div class="card">
+                              <div class="card-body bg-dark rounded-5">
+                                  <img class="img-fluid rounded-5 " src="assets/img/portofolio/mipersis.png" alt="">
+                              </div>
+                              <div class="text text-center mt-3">
+                                  <small class="red">Scholl wesite</small>
+                                  <p>SMK Persis 02 Bandung</p>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-                  <p>Lorem, ipsum dolor.</p>
                 </div>
-                <div class="col-4 text-center my-4">
-                  <div class="btn-big bg-white dark mb-2">
-                    <i class="bi bi-house-gear-fill fs-4"></i>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <div class="row justify-content-center">
+                      <div class="col-4">
+                          <div class="card">
+                              <div class="card-body bg-dark rounded-5">
+                                  <img class="img-fluid rounded-5 " src="assets/img/portofolio/sinergi.png" alt="">
+                              </div>
+                              <div class="text text-center mt-3">
+                                  <small class="red">Scholl wesite</small>
+                                  <p>SMK Persis 02 Bandung</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-4">
+                          <div class="card">
+                              <div class="card-body bg-dark rounded-5">
+                                  <img class="img-fluid rounded-5 " src="assets/img/portofolio/onlineshop.jpg" alt="">
+                              </div>
+                              <div class="text text-center mt-3">
+                                  <small class="red">Scholl wesite</small>
+                                  <p>SMK Persis 02 Bandung</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-4">
+                          <div class="card">
+                              <div class="card-body bg-dark rounded-5">
+                                  <img class="img-fluid rounded-5 " src="assets/img/portofolio/costum dashboard.png" alt="">
+                              </div>
+                              <div class="text text-center mt-3">
+                                  <small class="red">Scholl wesite</small>
+                                  <p>SMK Persis 02 Bandung</p>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-                  <p>Lorem, ipsum dolor.</p>
-                </div>
-                <div class="col-4 text-center my-4">
-                  <div class="btn-big bg-white dark mb-2">
-                    <i class="bi bi-house-gear-fill fs-4"></i>
-                  </div>
-                  <p>Lorem, ipsum dolor.</p>
-                </div>
-                <div class="col-4 text-center my-4">
-                  <div class="btn-big bg-white dark mb-2">
-                    <i class="bi bi-house-gear-fill fs-4"></i>
-                  </div>
-                  <p>Lorem, ipsum dolor.</p>
-                </div>
-                <div class="col-4 text-center my-4">
-                  <div class="btn-big bg-white dark mb-2">
-                    <i class="bi bi-house-gear-fill fs-4"></i>
-                  </div>
-                  <p>Lorem, ipsum dolor.</p>
-                </div>
-                <div class="col-4 text-center my-4">
-                  <div class="btn-big bg-white dark mb-2">
-                    <i class="bi bi-house-gear-fill fs-4"></i>
-                  </div>
-                  <p>Lorem, ipsum dolor.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section id="portofolio">
-      <div class="container py-5">
-        <div class="row mt-2 offset-1 ">
-          <div class="col-md-5">
-            <h5 class="fw-bold red">Our Portofolio</h5>
-            <h2>Give The Best Service Is Our Responsibility</h2>
-          </div>
-        </div>
-        <div class="col-10 offset-1">
-          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="false" >
-            <div class="carousel-indicators">
-              <button style="width: 10px; height: 10px;"  type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button style="width: 10px; height: 10px;" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </section>
+      <!-- tutup portofolio -->
+  
+      <!-- sesi testimoni -->
+      <section id="testimonial">
+        <div class="container py-5">
+          <div class="row justify-content-between py-4">
+            <div class="col-md-4 offset-md-1 text-white">
+              <h5>TESTIMONIAL</h5>
+              <h2>This Is What Our Costumer <span class="red">Said!</span></h2>
             </div>
-            <div class="carousel-inner py-4">
-              <div class="carousel-item active" data-bs-interval="2000">
-                <div class="row justify-content-center">
-                    <div class="col-4">
-                        <div class="card">
-                            <div class="card-body bg-dark rounded-5">
-                                <img class="img-fluid rounded-5 " src="assets/img/portofolio/penerimaansiswa.png" alt="">
-                            </div>
-                            <div class="text text-center mt-3">
-                                <small class="red">Scholl wesite</small>
-                                <p>SMK Persis 02 Bandung</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card">
-                            <div class="card-body bg-dark rounded-5">
-                                <img class="img-fluid rounded-5 " src="assets/img/portofolio/tens holiday.png" alt="">
-                            </div>
-                            <div class="text text-center mt-3">
-                                <small class="red">Scholl wesite</small>
-                                <p>SMK Persis 02 Bandung</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card">
-                            <div class="card-body bg-dark rounded-5">
-                                <img class="img-fluid rounded-5 " src="assets/img/portofolio/mipersis.png" alt="">
-                            </div>
-                            <div class="text text-center mt-3">
-                                <small class="red">Scholl wesite</small>
-                                <p>SMK Persis 02 Bandung</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <div class="row justify-content-center">
-                    <div class="col-4">
-                        <div class="card">
-                            <div class="card-body bg-dark rounded-5">
-                                <img class="img-fluid rounded-5 " src="assets/img/portofolio/sinergi.png" alt="">
-                            </div>
-                            <div class="text text-center mt-3">
-                                <small class="red">Scholl wesite</small>
-                                <p>SMK Persis 02 Bandung</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card">
-                            <div class="card-body bg-dark rounded-5">
-                                <img class="img-fluid rounded-5 " src="assets/img/portofolio/onlineshop.jpg" alt="">
-                            </div>
-                            <div class="text text-center mt-3">
-                                <small class="red">Scholl wesite</small>
-                                <p>SMK Persis 02 Bandung</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card">
-                            <div class="card-body bg-dark rounded-5">
-                                <img class="img-fluid rounded-5 " src="assets/img/portofolio/costum dashboard.png" alt="">
-                            </div>
-                            <div class="text text-center mt-3">
-                                <small class="red">Scholl wesite</small>
-                                <p>SMK Persis 02 Bandung</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-3 position-relative">
+              <div class="wrapper position-absolute bottom-0 end-50">
+                <button class="btn btn-big bg-white dark" type="button" data-bs-target="#carouseltestimony" data-bs-slide="prev"><i class="bi bi-caret-left-fill"></i></button>
+                <button class="btn btn-big bg-white dark" type="button" data-bs-target="#carouseltestimony" data-bs-slide="next"><i class="bi bi-caret-right-fill"></i></button>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="testimonial">
-      <div class="container py-5">
-        <div class="row justify-content-between py-4">
-          <div class="col-md-4 offset-md-1 text-white">
-            <h5>TESTIMONIAL</h5>
-            <h2>This Is What Our Costumer <span class="red">Said!</span></h2>
-          </div>
-          <div class="col-md-3 position-relative">
-            <div class="wrapper position-absolute bottom-0 end-50">
-              <button class="btn btn-big bg-white dark" type="button" data-bs-target="#carouselExample" data-bs-slide="prev"><i class="bi bi-caret-left-fill"></i></button>
-              <button class="btn btn-big bg-white dark" type="button" data-bs-target="#carouselExample" data-bs-slide="next"><i class="bi bi-caret-right-fill"></i></button>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center"> 
-          <div class="col-10">
-            <div id="carouselExample" class="carousel slide">
-              <div class="carousel-inner my-3">
-                <div class="carousel-item active">
-                  <div class="row text-white">
-                    <div class="col-6">
-                      <h1><i class="bi bi-quote"></i></h1>
-                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia deserunt culpa dolores veritatis nulla inventore voluptas officia quibusdam exercitationem maxime.</p>
-                      <div class="row align-items-center">
-                        <div class="col-2">
-                          <img src="assets/img/people/Untitled-1.png" alt="" class="rounded-circle img-fluid">
-                        </div>
-                        <div class="col-6">
-                          <b>Teh Yuli</b>
-                          <p class="fw-light">Lorem, ipsum dolor.</p>
+          <div class="row justify-content-center my-5"> 
+            <div class="col-10">
+              <div id="carouseltestimony" class="carousel slide">
+                <div class="carousel-inner my-3">
+                  <div class="carousel-item active">
+                    <div class="row text-white">
+                      <div class="col-6">
+                        <h1><i class="bi bi-quote"></i></h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia deserunt culpa dolores veritatis nulla inventore voluptas officia quibusdam exercitationem maxime.</p>
+                        <div class="row align-items-center">
+                          <div class="col-2">
+                            <img src="assets/img/people/Untitled-1.png" alt="" class="rounded-circle img-fluid">
+                          </div>
+                          <div class="col-6">
+                            <b>Teh Yuli</b>
+                            <p class="fw-light">Lorem, ipsum dolor.</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-6">
-                      <h1><i class="bi bi-quote"></i></h1>
-                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia deserunt culpa dolores veritatis nulla inventore voluptas officia quibusdam exercitationem maxime.</p>
-                      <div class="row align-items-center">
-                        <div class="col-2">
-                          <img src="assets/img/people/2.png" alt="" class="rounded-circle img-fluid">
-                        </div>
-                        <div class="col-6">
-                          <b>Alex suuk</b>
-                          <p class="fw-light">Lorem, ipsum dolor.</p>
+                      <div class="col-6">
+                        <h1><i class="bi bi-quote"></i></h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia deserunt culpa dolores veritatis nulla inventore voluptas officia quibusdam exercitationem maxime.</p>
+                        <div class="row align-items-center">
+                          <div class="col-2">
+                            <img src="assets/img/people/2.png" alt="" class="rounded-circle img-fluid">
+                          </div>
+                          <div class="col-6">
+                            <b>Alex suuk</b>
+                            <p class="fw-light">Lorem, ipsum dolor.</p>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row text-white">
-                    <div class="col-6">
-                      <h1><i class="bi bi-quote"></i></h1>
-                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia deserunt culpa dolores veritatis nulla inventore voluptas officia quibusdam exercitationem maxime.</p>
-                      <div class="row align-items-center">
-                        <div class="col-2">
-                          <img src="assets/img/people/3.png" alt="" class="rounded-circle img-fluid">
-                        </div>
-                        <div class="col-6">
-                          <b>Teh Neneng</b>
-                          <p class="fw-light">Lorem, ipsum dolor.</p>
+                  <div class="carousel-item">
+                    <div class="row text-white">
+                      <div class="col-6">
+                        <h1><i class="bi bi-quote"></i></h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia deserunt culpa dolores veritatis nulla inventore voluptas officia quibusdam exercitationem maxime.</p>
+                        <div class="row align-items-center">
+                          <div class="col-2">
+                            <img src="assets/img/people/3.png" alt="" class="rounded-circle img-fluid">
+                          </div>
+                          <div class="col-6">
+                            <b>Teh Neneng</b>
+                            <p class="fw-light">Lorem, ipsum dolor.</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-6">
-                      <h1><i class="bi bi-quote"></i></h1>
-                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia deserunt culpa dolores veritatis nulla inventore voluptas officia quibusdam exercitationem maxime.</p>
-                      <div class="row align-items-center">
-                        <div class="col-2">
-                          <img src="assets/img/people/4.png" alt="" class="rounded-circle img-fluid">
-                        </div>
-                        <div class="col-6">
-                          <b>Mas Dani</b>
-                          <p class="fw-light">Lorem, ipsum dolor.</p>
+                      <div class="col-6">
+                        <h1><i class="bi bi-quote"></i></h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia deserunt culpa dolores veritatis nulla inventore voluptas officia quibusdam exercitationem maxime.</p>
+                        <div class="row align-items-center">
+                          <div class="col-2">
+                            <img src="assets/img/people/4.png" alt="" class="rounded-circle img-fluid">
+                          </div>
+                          <div class="col-6">
+                            <b>Mas Dani</b>
+                            <p class="fw-light">Lorem, ipsum dolor.</p>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -359,153 +370,159 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section id="faq">
-      <div class="container py-5">
-        <div class="row py-2">
-          <div class="col text-center">
-            <h2>F.A.Q</h2>
-            <h5 class="red">Frequently Asked Question</h5>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-10">
-            <div class="card border py-2 px-4 my-2">
-              <div class="row justify-content-between align-items-center">
-                <div class="col-9">
-                  <a class="text-decoration-none text-dark" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    <b>Apakah Tersedia CMS untuk Update webiste?</b>
-                  </a>
-                </div>
-                <div class="col-1">
-                  <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                    <i class="bi bi-caret-down-fill"></i>
-                  </button>
-                </div>
-              </div>
-              <div class="collapse" id="collapseExample">
-                <div class="card card-body">
-                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                </div>
-              </div>
-            </div>
-            <div class="card border py-2 px-4 my-2">
-              <div class="row justify-content-between align-items-center">
-                <div class="col-9 ">
-                  <a class="text-decoration-none text-dark" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
-                    <b>Berapa Biaya Perpanjangan webiste?</b>
-                  </a>
-                </div>
-                <div class="col-1">
-                  <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
-                    <i class="bi bi-caret-down-fill"></i>
-                  </button>
-                </div>
-              </div>
-              <div class="collapse" id="collapseExample2">
-                <div class="card card-body">
-                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                </div>
-              </div>
-            </div>
-            <div class="card border py-2 px-4 my-2">
-              <div class="row justify-content-between align-items-center">
-                <div class="col-9 ">
-                  <a class="text-decoration-none text-dark" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
-                    <b>Berapa lama pengerjaan webiste?</b>
-                  </a>
-                </div>
-                <div class="col-1">
-                  <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
-                    <i class="bi bi-caret-down-fill"></i>
-                  </button>
-                </div>
-              </div>
-              <div class="collapse" id="collapseExample3">
-                <div class="card card-body">
-                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                </div>
-              </div>
-            </div>
-            <div class="card border py-2 px-4 my-2">
-              <div class="row justify-content-between align-items-center">
-                <div class="col-9 ">
-                  <a class="text-decoration-none text-dark" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
-                    <b>Berapa kali revisi dapat di ajukan?</b>
-                  </a>
-                </div>
-                <div class="col-1">
-                  <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
-                    <i class="bi bi-caret-down-fill"></i>
-                  </button>
-                </div>
-              </div>
-              <div class="collapse" id="collapseExample4">
-                <div class="card card-body">
-                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                </div>
-              </div>
-            </div>
-            <div class="card border py-2 px-4 my-2">
-              <div class="row justify-content-between align-items-center">
-                <div class="col-9 ">
-                  <a class="text-decoration-none text-dark" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5">
-                    <b>Berapa harga nya?</b>
-                  </a>
-                </div>
-                <div class="col-1">
-                  <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
-                    <i class="bi bi-caret-down-fill"></i>
-                  </button>
-                </div>
-              </div>
-              <div class="collapse" id="collapseExample5">
-                <div class="card card-body">
-                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                </div>
-              </div>
+      </section>
+      <!-- tutup testimoni -->
+  
+      <!-- sesi faq -->
+      <section id="faq">
+        <div class="container py-5">
+          <div class="row py-2">
+            <div class="col text-center">
+              <h2>F.A.Q</h2>
+              <h5 class="red">Frequently Asked Question</h5>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact-us">
-      <div class="container py-5">
-        <div class="row">
-          <div class="col text-center">
-            <h5 class="red">Contact Us</h5>
-            <h2>Get In Touch!</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-10">
-            <div class="card shadow p-3">
-              <div class="row">
-                <div class="col-4">
-                  <div class="card bg-dark py-5 px-4">
-                    <div class="title mb-3">
-                      <h5 class="fw-bold">Contact Information</h5>
-                      <p><small>Feel free to connect with us</small></p>
-                    </div>
-                    <div class="info-contact mb-5">
-                      <p><i class="bi bi-telephone-fill me-3"></i>081914209656</p>
-                      <p><i class="bi bi-envelope-at-fill me-3"></i>hilfideveloper@gmail.com</p>
-                      <p><i class="bi bi-geo-alt-fill me-3"></i>Jl Taman Holis Indah Gg Sumur Sari No.15 RT03/ Kel Cigondewah Rahayu, Bandung</p>
-                    </div>
+          <div class="row justify-content-center">
+            <div class="col-10">
+              <div class="card border py-2 px-4 my-2">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-9">
+                    <a class="text-decoration-none text-dark" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      <b>Apakah Tersedia CMS untuk Update webiste?</b>
+                    </a>
+                  </div>
+                  <div class="col-1">
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
                   </div>
                 </div>
-                <div class="col-8">
-                  <div class="mapouter"><div class="gmap_canvas rounded-5"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=hilfi developer&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style><a href="https://embedgooglemap.2yu.co/">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div></div>
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                  </div>
+                </div>
+              </div>
+              <div class="card border py-2 px-4 my-2">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-9 ">
+                    <a class="text-decoration-none text-dark" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                      <b>Berapa Biaya Perpanjangan webiste?</b>
+                    </a>
+                  </div>
+                  <div class="col-1">
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="collapse" id="collapseExample2">
+                  <div class="card card-body">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                  </div>
+                </div>
+              </div>
+              <div class="card border py-2 px-4 my-2">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-9 ">
+                    <a class="text-decoration-none text-dark" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
+                      <b>Berapa lama pengerjaan webiste?</b>
+                    </a>
+                  </div>
+                  <div class="col-1">
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="collapse" id="collapseExample3">
+                  <div class="card card-body">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                  </div>
+                </div>
+              </div>
+              <div class="card border py-2 px-4 my-2">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-9 ">
+                    <a class="text-decoration-none text-dark" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
+                      <b>Berapa kali revisi dapat di ajukan?</b>
+                    </a>
+                  </div>
+                  <div class="col-1">
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="collapse" id="collapseExample4">
+                  <div class="card card-body">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                  </div>
+                </div>
+              </div>
+              <div class="card border py-2 px-4 my-2">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-9 ">
+                    <a class="text-decoration-none text-dark" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5">
+                      <b>Berapa harga nya?</b>
+                    </a>
+                  </div>
+                  <div class="col-1">
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="collapse" id="collapseExample5">
+                  <div class="card card-body">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <!-- tutup faq -->
+
+      <!-- sesi kontak -->
+      <section id="contact-us">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col text-center">
+              <h5 class="red">Contact Us</h5>
+              <h2>Get In Touch!</h2>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-10">
+              <div class="card shadow p-3">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="card bg-dark py-5 px-4">
+                      <div class="title mb-3">
+                        <h5 class="fw-bold">Contact Information</h5>
+                        <p><small>Feel free to connect with us</small></p>
+                      </div>
+                      <div class="info-contact mb-5">
+                        <p><i class="bi bi-telephone-fill me-3"></i>081914209656</p>
+                        <p><i class="bi bi-envelope-at-fill me-3"></i>hilfideveloper@gmail.com</p>
+                        <p><i class="bi bi-geo-alt-fill me-3"></i>Jl Taman Holis Indah Gg Sumur Sari No.15 RT03/ Kel Cigondewah Rahayu, Bandung</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="mapouter"><div class="gmap_canvas rounded-5"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=hilfi developer&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style><a href="https://embedgooglemap.2yu.co/">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- tutup kontak -->
+
+    </main>
 
     <footer>
       <div class="container-fluid">
