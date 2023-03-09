@@ -3,7 +3,7 @@ var swiper = new Swiper(".portofolioSwiper", {
     spaceBetween: 10,
     loop: true,
     autoplay: {
-    delay: 2500,
+    delay: 2700,
     disableOnInteraction: false
     },
     pagination: {
@@ -27,7 +27,7 @@ var swiper2 = new Swiper(".client-response", {
     spaceBetween: 10,
     loop: true,
     autoplay: {
-    delay: 2500,
+    delay: 3500,
     disableOnInteraction: false
     },
     pagination: {
@@ -45,7 +45,7 @@ var swiper2 = new Swiper(".client-response", {
       },
     },
   });
-  
+
   document.addEventListener("DOMContentLoaded", function(event) {
     let year = new Date().getFullYear();
     let span = document.getElementById("this-year");
