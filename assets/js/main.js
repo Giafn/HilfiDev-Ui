@@ -45,3 +45,9 @@ var swiper2 = new Swiper(".client-response", {
       },
     },
   });
+  
+  document.addEventListener("DOMContentLoaded", function(event) {
+    let year = new Date().getFullYear();
+    let span = document.getElementById("this-year");
+    span.append(year);
+  });
