@@ -93,3 +93,14 @@ h2, h5{
 #testimonial{
     background-color: #004754;
 }
+.swiper-pagination-bullet-active {
+    background: #d70037 !important;
+}
+
+
+@media only screen and (min-width: 576px) {
+    /* For tablets: */
+    .mapouter{
+        height: 50vh;
+    }
+  }
