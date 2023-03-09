@@ -106,4 +106,7 @@ h2, h5{
     .gmap_canvas{
         height: 50vh !important;
     }
+    .advantages-items p{
+        font-size: small;
+    }
   }
