@@ -8,6 +8,9 @@
 h2, h5{
     font-weight: bold;
 }
+a:active{
+    border: 1px solid transparent !important;
+}
 .logo-name{
     font-size: medium;
 }
@@ -76,6 +79,10 @@ h2, h5{
 }
 #services{
     background-color: #f7f8fc;
+}
+.hov-red:hover,.hov-red:active{
+    background-color: #d70037 !important;
+    color: white !important;
 }
 .card{
     border: none;
