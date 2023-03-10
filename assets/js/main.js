@@ -1,3 +1,4 @@
+AOS.init({once: true});
 var swiper = new Swiper(".portofolioSwiper", {
     slidesPerView: 1,
     spaceBetween: 10,
